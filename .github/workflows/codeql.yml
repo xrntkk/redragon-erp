@@ -48,5 +48,5 @@ jobs:
     - name: Upload CodeQL database as artifact
       uses: actions/upload-artifact@v4
       with:
-        name: redragon-code-database-${{ matrix.language }
+        name: redragon-code-database-(${{ matrix.language }})
         path: /home/runner/work/_temp/codeql_databases/
